@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./modal.module.css";
 
-export const Modal = () => {
+export const Modal = ({ closeModal }) => {
 	return (
 		<div className={styles.modalBack}>
 			<div className={styles.modalContainer}>
@@ -12,7 +12,9 @@ export const Modal = () => {
 						esse iste perferendis.
 					</p>
 				</div>
-				<button className={styles.modal__closeBtn}>Close Modal</button>
+				<button onClick={closeModal} className={styles.modal__closeBtn}>
+					Close Modal
+				</button>
 			</div>
 		</div>
 	);
