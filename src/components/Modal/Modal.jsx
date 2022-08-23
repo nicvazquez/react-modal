@@ -12,7 +12,7 @@ export const Modal = () => {
 						esse iste perferendis.
 					</p>
 				</div>
-				<button className={styles.modal__closeBtn}>Close</button>
+				<button className={styles.modal__closeBtn}>Close Modal</button>
 			</div>
 		</div>
 	);
